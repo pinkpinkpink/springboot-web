@@ -3,20 +3,18 @@ package com.example.domain;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Book {
+    public Object reader;
+    public Object isbn;
     @Value("")
-    private String name;
+    private String title;
     @Value("")
     private Long id;
     @Value("")
     private String author;
 
-    public String getName() {
-        return name;
-    }
+    @Value("")
+    private String description;
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Long getId() {
         return id;
