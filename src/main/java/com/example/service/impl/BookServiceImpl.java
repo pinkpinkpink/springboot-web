@@ -1,4 +1,4 @@
-package com.example.service.Impl;
+package com.example.service.impl;
 
 import com.example.domain.Book;
 import com.example.service.BookService;
@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.Map;
 
 
+/**
+ * @author wangyifan
+ */
 @Service
 public class BookServiceImpl implements BookService{
 

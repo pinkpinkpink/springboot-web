@@ -11,6 +11,12 @@ public interface BookService {
     Book update(Book book);
 
     Book delete(Book book);
+
+    /**
+     * @param id
+     * @return Result =
+     *
+     */
     Book findById(long id);
 
 }

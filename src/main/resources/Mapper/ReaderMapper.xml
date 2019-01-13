@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+</beans>
+<mapper namespace = "com.example.dao.ReaderDao">
+<resultMap id = "ReaderMapper" type = "com.example.domain.Reader">
+    <result column ="name" property="name"></result>
+    <result column="age" property = "age"></result>
+    <result column="sex" property="sex"></result>
+    <result column="address" property="address"></result>
+</resultMap>
+<paramterMap id ="Reader" type = "com.example.domain.Reader"/>
+<sql id = "Base_Column_List">
+name,age,sex,address
+
+</sql>
+<select id = "findByNmae" resultMap = "ReaderMapper" parameterType = "java.lang.String" ></select>
+    <include redfid = ""/>
+    from reader
+    where name = #{readername}
+</mapper>

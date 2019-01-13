@@ -29,7 +29,7 @@ class JdbcReadingListRepository implements ReadingListRepository {
         Object rs;
         jdbc.query(
                 "Select id,reader,isbn,title,author,description" +
-                        "from Book Where reader = ?";);
+                        "from Book Where reader = ?",);
     }
 
     @Override
