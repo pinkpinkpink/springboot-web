@@ -1,0 +1,16 @@
+<!-- mybatis-config.xml -->
+<typeHandlers>
+    <package name="org.mybatis.example"/>
+    <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="java.math.RoundingMode"/>
+</typeHandlers>
+        <!-- mybatis-config.xml -->
+<objectFactory type="org.mybatis.example.ExampleObjectFactory">
+<property name="someProperty" value="100"/>
+</objectFactory>
+
+        <!-- 使用相对于类路径的资源引用 -->
+<mappers>
+<mapper resource="org/mybatis/builder/AuthorMapper.xml"/>
+<mapper resource="org/mybatis/builder/BlogMapper.xml"/>
+<mapper resource="org/mybatis/builder/PostMapper.xml"/>
+</mappers>

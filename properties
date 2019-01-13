@@ -1,0 +1,4 @@
+<properties resource="org/mybatis/example/config.properties">
+  <property name="username" value="dev_user"/>
+  <property name="password" value="F2Fa3!33TYyg"/>
+</properties>

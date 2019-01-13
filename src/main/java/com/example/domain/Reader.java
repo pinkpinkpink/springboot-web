@@ -1,5 +1,5 @@
-package com.example.domain;/*
- * @Author
+package com.example.domain;
+ /** @Author
  * @Date：Created in ${time} ${date}
  * @description
  * @Modified By
